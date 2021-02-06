@@ -7,8 +7,7 @@ FROM        ubuntu:20.04
 
 LABEL       author="Kenny B " maintainer="kenny@venatus.digital"
 
-ENV TZ=Europe/Berlin
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+ARG DEBIAN_FRONTEND=noninteractive
 
 # Install Dependencies
 RUN dpkg --add-architecture i386 \
