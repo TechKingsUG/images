@@ -7,6 +7,9 @@ FROM        ubuntu:20.04
 
 LABEL       author="Kenny B " maintainer="kenny@venatus.digital"
 
+ENV TZ=Europe/Berlin
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Install Dependencies
 RUN dpkg --add-architecture i386 \
  && apt update \
