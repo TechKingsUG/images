@@ -1,7 +1,7 @@
 # ----------------------------------
 # Wine Dockerfile for Steam Servers
 # Environment: Debian Unstable Slim + Wine
-# Minimum Panel Version: 0.7.6
+# Minimum Panel Version: 0.7.6 
 # ----------------------------------
 FROM        debian:unstable-slim
 
