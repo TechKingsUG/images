@@ -5,7 +5,7 @@
 # ----------------------------------
 FROM        debian:unstable-slim
 
-LABEL       author="Kenny B " maintainer="kenny@venatus.digital"
+LABEL       author="Nils van Lück " maintainer="n.vanlueck@techkings.de"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
