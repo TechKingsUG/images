@@ -9,6 +9,10 @@ LABEL       author="Kenny B " maintainer="kenny@venatus.digital"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+RUN apt update \
+ && apt upgrade -y \
+ && apt install -y wget
+ 
 # Install Dependencies
 RUN dpkg --add-architecture i386 \
   && wget -nc https://dl.winehq.org/wine-builds/winehq.key \
