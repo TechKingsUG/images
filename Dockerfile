@@ -1,9 +1,9 @@
 # ----------------------------------
 # Wine Dockerfile for Steam Servers
-# Environment: Ubuntu:20.04 + Wine
+# Environment: Debian Unstable Slim + Wine
 # Minimum Panel Version: 0.7.6
 # ----------------------------------
-FROM        ubuntu:20.04
+FROM        debian:unstable-slim
 
 LABEL       author="Kenny B " maintainer="kenny@venatus.digital"
 
