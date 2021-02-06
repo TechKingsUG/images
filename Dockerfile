@@ -17,7 +17,7 @@ RUN apt update \
 RUN dpkg --add-architecture i386 \
   && wget -nc https://dl.winehq.org/wine-builds/winehq.key \
   && apt-key add winehq.key \
-  && echo \"deb https://dl.winehq.org/wine-builds/debian/ buster main\" > /etc/apt/sources.list.d/wine.list
+  && echo "deb https://dl.winehq.org/wine-builds/debian/ buster main" > /etc/apt/sources.list.d/wine.list
 
 RUN apt update \
  && apt upgrade -y \
