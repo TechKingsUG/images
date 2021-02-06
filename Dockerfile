@@ -11,10 +11,14 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Install Dependencies
 RUN dpkg --add-architecture i386 \
- && apt update \
+  && wget -nc https://dl.winehq.org/wine-builds/winehq.key \
+  && apt-key add winehq.key \
+  && echo \"deb https://dl.winehq.org/wine-builds/debian/ buster main\" > /etc/apt/sources.list.d/wine.list
+
+RUN apt update \
  && apt upgrade -y \
  && apt install -y software-properties-common \
- && apt install -y --install-recommends wine64 lib32gcc-s1 libntlm0 wget winbind iproute2 \
+ && apt install -y --install-recommends winehq-stable lib32gcc-s1 libntlm0 wget winbind iproute2 \
  && useradd -d /home/container -m container
 
 USER        container
