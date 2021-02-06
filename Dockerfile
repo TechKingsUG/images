@@ -1,9 +1,9 @@
 # ----------------------------------
 # Wine Dockerfile for Steam Servers
-# Environment: Ubuntu:18.04 + Wine
+# Environment: Ubuntu:20.04 + Wine
 # Minimum Panel Version: 0.7.6
 # ----------------------------------
-FROM        ubuntu:18.04
+FROM        ubuntu:20.04
 
 LABEL       author="Kenny B" maintainer="kenny@venatus.digital"
 
