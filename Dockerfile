@@ -5,7 +5,7 @@
 # ----------------------------------
 FROM        ubuntu:20.04
 
-LABEL       author="Kenny B" maintainer="kenny@venatus.digital"
+LABEL       author="Kenny B " maintainer="kenny@venatus.digital"
 
 # Install Dependencies
 RUN dpkg --add-architecture i386 \
