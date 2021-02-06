@@ -15,7 +15,7 @@ on:
 
 env:
   # TODO: Change variable to your image's name.
-  IMAGE_NAME: techkings/images:wine-source
+  IMAGE_NAME: techkings/images
 
 jobs:
   # Run tests.
